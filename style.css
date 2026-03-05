@@ -40,6 +40,15 @@ body {
     overflow-x: hidden;
 }
 
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -535,6 +544,117 @@ body {
 .form-group textarea:focus {
     border-color: var(--accent-color);
     box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
+}
+
+/* Experience Section & Timeline */
+.experience {
+    background: var(--bg-color);
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 20px;
+    height: 100%;
+    width: 2px;
+    background: var(--glass-border);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 3rem;
+    padding-left: 60px;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: 11px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    background: var(--accent-color);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--accent-color);
+    z-index: 1;
+}
+
+.timeline-date {
+    font-size: 0.9rem;
+    color: var(--accent-color);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-content {
+    background: var(--bg-secondary);
+    padding: 1.5rem;
+    border-radius: 16px;
+    border: 1px solid var(--glass-border);
+    transition: var(--transition-fast);
+}
+
+.timeline-content:hover {
+    transform: translateX(10px);
+    border-color: var(--accent-color);
+}
+
+.timeline-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.timeline-content p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+@media (min-width: 768px) {
+    .timeline::before {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .timeline-item {
+        width: 50%;
+        padding-left: 0;
+        margin-bottom: 4rem;
+    }
+
+    .timeline-item:nth-child(odd) {
+        float: left;
+        padding-right: 50px;
+        text-align: right;
+    }
+
+    .timeline-item:nth-child(even) {
+        float: right;
+        padding-left: 50px;
+        text-align: left;
+    }
+
+    .timeline-item:nth-child(even) .timeline-dot {
+        left: -10px;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-dot {
+        right: -10px;
+        left: auto;
+    }
+
+    .timeline-item::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
 }
 
 /* Footer */
