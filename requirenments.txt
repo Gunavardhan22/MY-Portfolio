@@ -1,0 +1,97 @@
+Prompt:
+
+Create a modern, responsive personal portfolio website using only HTML5 and CSS3 (no JavaScript, no frameworks).
+
+The portfolio is for Gunavardhan Tigulla, a Computer Science Engineering student and aspiring Full-Stack Web Developer.
+
+Requirements:
+
+Build a clean, professional, ATS-friendly one-page website with the following sections:
+
+Header / Navigation Bar
+
+Logo with name
+
+Navigation links (Home, About, Skills, Projects, Contact)
+
+Sticky top navbar
+
+Hero Section
+
+Name: Gunavardhan Tigulla
+
+Title: Full-Stack Developer | AI/ML Enthusiast
+
+Short professional summary (2–3 lines)
+
+Two buttons: "View Projects" and "Download Resume"
+
+About Me
+
+Short paragraph highlighting experience in Python, React.js, Flask, SQL, Machine Learning, REST APIs, and Data Analysis.
+
+Skills Section
+
+Categorized layout:
+
+Frontend: HTML, CSS, JavaScript, React
+
+Backend: Python, Flask, SQL
+
+Tools: Git, GitHub, VS Code
+
+ML Libraries: NumPy, Pandas, Scikit-learn
+
+Display skills in card or grid format.
+
+Projects Section
+
+Resume Analyzer
+
+Multi-Channel Ad Budget & Bid Optimization System
+
+SmartRoad – Real-Time Pothole Detection
+
+Each project should have title, short description, and GitHub link placeholder.
+
+Education Section
+
+B.Tech in Computer Science Engineering
+
+Contact Section
+
+Email
+
+LinkedIn
+
+GitHub
+
+Contact form (UI only, no backend)
+
+Footer
+
+Clean and minimal
+
+Copyright line
+
+Design Requirements:
+
+Use only HTML and CSS
+
+Fully responsive (mobile-first design)
+
+Modern professional blue/gray color theme
+
+Use Flexbox and CSS Grid
+
+Smooth hover effects and button transitions
+
+Soft shadows, rounded corners
+
+Clean typography (Google Fonts allowed)
+
+Organized, well-commented code
+
+Structured and production-ready
+
+Do not include JavaScript or external CSS frameworks.
